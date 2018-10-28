@@ -15,6 +15,6 @@ function mouseClicked() {
 	if (mouseX > width || mouseX < 0 || mouseY > height || mouseY < 0) {
 		return;
 	}
-
+	// Salope
 	tick();
 }
