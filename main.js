@@ -61,8 +61,7 @@ function createWindow() {
           type: 'separator'
         },
         {
-          role: 'quit',
-          accelerator: 'Escape'
+          role: 'quit'
         }
       ]
     });

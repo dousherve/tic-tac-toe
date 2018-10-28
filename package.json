@@ -12,7 +12,8 @@
     "appId": "com.dousherve.tic-tac-toe",
     "productName": "TicTacToe",
     "mac": {
-      "category": "public.app-category.games"
+      "category": "public.app-category.games",
+      "identity": "null"
     }
   },
   "author": "Louis Hervé",
