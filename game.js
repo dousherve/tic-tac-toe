@@ -148,11 +148,11 @@ function getResult() {
       }
     }
 
-    let check = checkLines(arrCols, arrRows, arrDiagonal1, arrDiagonal2);
+    let check = rowCrossed() || columnCrossed() || diagonalCrossed();
 
-    if (check || checkLines(arrDiagonal1, arrDiagonal2)) {
+    if (check) {
       return current;
-    } else if (count === 9 && !check) {
+    } else if (count === 9) {
       return DRAW;
     }
   }
@@ -160,22 +160,42 @@ function getResult() {
   return NONE;
 }
 
-function checkLine(arr) {
-  let element = arr[0];
-  for (let i = 1; i < 3; i++) {
-    if (arr[i] != element || arr[i] == NONE) {
-      return false;
+function rowCrossed() {
+  for (let i = 0; i < 3; i++) {
+    if (board[i][0] === board[i][1] &&
+      board[i][1] === board[i][2] &&
+      board[i][0] !== NONE) {
+      return true
     }
   }
-  return true;
+
+  return false;
 }
 
-function checkLines() {
-  for (let i = 0; i < arguments.length; i++) {
-    if (checkLine(arguments[i])) {
+function columnCrossed() {
+  for (let i = 0; i < 3; i++) {
+    if (board[0][i] === board[1][i] &&
+      board[1][i] === board[2][i] &&
+      board[0][i] !== NONE) {
       return true;
     }
   }
+  return false;
+}
+
+function diagonalCrossed() {
+  if (board[0][0] === board[1][1] &&
+    board[1][1] === board[2][2] &&
+    board[0][0] !== NONE) {
+    return true;
+  }
+
+  if (board[2][0] === board[1][1] &&
+    board[1][1] === board[0][2] &&
+    board[0][0] !== NONE) {
+    return true;
+  }
+
   return false;
 }
 
