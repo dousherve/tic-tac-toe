@@ -5,15 +5,14 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "pack": "electron-builder --dir",
-    "dist": "electron-builder",
-    "postinstall": "electron-builder install-app-deps"
+    "pack": "build --dir",
+    "dist": "build"
   },
   "build": {
     "appId": "com.dousherve.tic-tac-toe",
     "productName": "TicTacToe",
     "mac": {
-      "category": "games"
+      "category": "public.app-category.games"
     }
   },
   "author": "Louis Hervé",
