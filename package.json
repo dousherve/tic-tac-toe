@@ -1,7 +1,7 @@
 {
   "name": "tic-tac-toe",
   "productName": "TicTacToe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A small TicTacToe game.",
   "main": "main.js",
   "scripts": {
@@ -12,6 +12,7 @@
   "build": {
     "appId": "com.dousherve.tic-tac-toe",
     "productName": "TicTacToe",
+    "copyright": "Copyright © 2018 Louis Dous Hervé. All rights not reserved ma gueule.",
     "mac": {
       "category": "public.app-category.games",
       "identity": "null"
