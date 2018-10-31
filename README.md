@@ -10,4 +10,4 @@ Use `npm start` to start the app
 
 ## Building
 
-Use `npm build`
+Use `npm run dist`
