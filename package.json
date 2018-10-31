@@ -1,5 +1,6 @@
 {
   "name": "tic-tac-toe",
+  "productName": "TicTacToe",
   "version": "1.0.0",
   "description": "A small TicTacToe game.",
   "main": "main.js",
