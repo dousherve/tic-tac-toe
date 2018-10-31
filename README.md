@@ -1,8 +1,8 @@
 # TicTacToe
 
-Basic TicTacToe game with Electron
+Basic TicTacToe game built with Electron.
 
-## Debugging
+## Developping
 
 Use `npm install` after cloning the project
 
@@ -10,4 +10,4 @@ Use `npm start` to start the app
 
 ## Building
 
-Use `npm run dist`
+Use `npm run dist` (tested on macOS only)
