@@ -35,7 +35,8 @@ function createWindow() {
     mainMenuTemplate.unshift({
       label: app.getName(),
       submenu: [{
-          role: 'about'
+          role: 'about',
+          accelerator: 'Command+A'
         },
         {
           type: 'separator'
