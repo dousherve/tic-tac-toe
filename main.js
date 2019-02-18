@@ -103,5 +103,12 @@ let mainMenuTemplate = [{
     click() {
       mainWindow.webContents.send('restart');
     }
+  },
+  {
+    label: 'Quitter',
+    accelerator: process.platform == 'darwin' ? 'Command+R' : 'Alt+F4',
+    click() {
+      app.quit();
+    }
   }]
 }];
